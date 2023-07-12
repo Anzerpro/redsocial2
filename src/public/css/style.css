@@ -1,0 +1,14 @@
+
+body{
+    background-color: #151e21;
+    color: aqua;
+    
+}
+nav{
+    background-color: #121212;
+}
+/*tamaño de icono*/
+.navbar-brand img{
+    width: 60%;
+}
+

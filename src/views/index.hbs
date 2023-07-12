@@ -1,0 +1,43 @@
+<div class="card bg-dark text-white">
+
+  <div class="card-header d-flex align-items-center">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-image"
+      viewBox="0 0 16 16">
+      <path d="M6.502 7a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+      <path
+        d="M14 14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5L14 4.5V14zM4 1a1 1 0 0 0-1 1v10l2.224-2.224a.5.5 0 0 1 .61-.075L8 11l2.157-3.02a.5.5 0 0 1 .76-.063L13 10V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4z" />
+    </svg>
+    Subir una imagen
+    </span>
+
+  </div>
+
+  {{! IMAGE UPLOAD FORM }}
+  <div class="card-body p-5">
+    <form action="/images" method="POST" enctype="multipart/form-data">
+
+      <div class="mb-3">
+        <input type="file" name="image" class="form-control" required />
+      </div>
+
+      <div class="mb-3">
+        <input type="text" name="title" class="form-control   border border-success" id="input"
+          placeholder="Titulo de la imagen" required />
+      </div>
+
+      <div class="mb-3">
+        <textarea name="description" rows="2" id="input" class="form-control el border border-success"
+          placeholder="Descripcion para la imagen" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success">
+          <i class="fa fa-upload"></i>
+          Subir imagen
+        </button>
+      </div>
+
+    </form>
+  </div>
+</div>
+
